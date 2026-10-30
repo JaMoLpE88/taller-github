@@ -1,0 +1,33 @@
+name: CI
+
+# El CI corre en cada push y en cada pull request sobre main.
+# Dos jobs en paralelo: lint de markdown y comprobación de enlaces.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint de markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: markdownlint
+        run: npx --yes markdownlint-cli2 "**/*.md"
+
+  links:
+    name: Enlaces de la documentación
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: check-links
+        run: node scripts/check-links.mjs
