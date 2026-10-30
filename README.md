@@ -14,7 +14,7 @@ Para participar en el taller solo necesita:
 
 ```text
 taller-github/
-├── README.md        ← tu documnetación de entrada (este archivo)
+├── README.md        ← tu documentación de entrada (este archivo)
 ├── LICENSE          → licencia MIT
 ├── docs/            → material del taller
 └── scripts/         → comprobaciones que usa el CI
@@ -32,7 +32,8 @@ taller-github/
 No: és exactamente para lo que está este repo. Crea una rama, ensaya y abandónala si no te convence.
 
 **¿Cómo propongo un cambio?**
-Abre un issue primero (para acordar el enfoque) y después un pull request con tu rama. El CI correraá lint y enlaces automáticamente.
+Abre un issue primero (para acordar el enfoque) y después un pull request con tu rama. El CI correrá lint y enlaces automáticamente.
 
 **¿El CI falla en mi PR?**
 Abre la pestaña Actions y lee el log del job fallido; la guía de jmolo explica paso a paso cómo depurarlo.
+
