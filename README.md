@@ -4,7 +4,7 @@ Este es el **repositorio de práctica** de la guía completa de GitHub de [jmolo
 
 ## Requisitos
 
-Para participar en el taller solo necesita:
+Para participar en el taller solo necesitas:
 
 - Una cuenta de GitHub.
 - Git instalado (ver [la guía de jmolo de Git](https://jmolo.es/blog/git-historial-que-salva/)).
@@ -14,7 +14,7 @@ Para participar en el taller solo necesita:
 
 ```text
 taller-github/
-├── README.md        ← tu documnetación de entrada (este archivo)
+├── README.md        ← tu documentación de entrada (este archivo)
 ├── LICENSE          → licencia MIT
 ├── docs/            → material del taller
 └── scripts/         → comprobaciones que usa el CI
@@ -23,5 +23,16 @@ taller-github/
 ## Cómo participar
 
 1. Lee la [guía completa de GitHub](https://jmolo.es/blog/github-guia-completa/).
-2. Abre un issue o contribute en un issue existente.
-3. Propón tus cambios con un pull request — el CI te lo agradecerá.
+2. Abre un issue o colabora en un issue existente.
+3. Propón tus cambios con un pull request — el CI correrá lint y enlaces automáticamente.
+
+## Preguntas frecuentes
+
+**¿Puedo romper algo?**
+No: es exactamente para lo que está este repo. Crea una rama, ensaya y abandónala si no te convence.
+
+**¿Cómo propongo un cambio?**
+Abre un issue primero (para acordar el enfoque) y después un pull request con tu rama. El CI correrá lint y enlaces automáticamente.
+
+**¿El CI falla en mi PR?**
+Abre la pestaña Actions y lee el log del job fallido; la guía de jmolo explica cómo depurarlo.
